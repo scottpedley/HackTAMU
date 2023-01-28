@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>77663627383-j6iqiu9bm94c37fadb66ec85la7qd9pl.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.77663627383-j6iqiu9bm94c37fadb66ec85la7qd9pl</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDle6xpEOy6thw4cfV86fsCLtJr0aiYVzQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>77663627383</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>itsAmyHong.HackTAMU</string>
+	<key>PROJECT_ID</key>
+	<string>hacktamu-a557f</string>
+	<key>STORAGE_BUCKET</key>
+	<string>hacktamu-a557f.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:77663627383:ios:f903a9789215c2a8197e72</string>
+</dict>
+</plist>

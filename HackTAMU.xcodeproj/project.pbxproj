@@ -17,6 +17,12 @@
 		3E50ED2E2985BC5A00FACC47 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E50ED2D2985BC5A00FACC47 /* NavigationBar.swift */; };
 		3E50ED302985BC7D00FACC47 /* CircleGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E50ED2F2985BC7D00FACC47 /* CircleGraph.swift */; };
 		3E50ED322985C53A00FACC47 /* LayeredBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E50ED312985C53A00FACC47 /* LayeredBackground.swift */; };
+		3ECC145E2985E7C9004CA990 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3ECC145D2985E7C9004CA990 /* GoogleService-Info.plist */; };
+		3ECC14612985E86F004CA990 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 3ECC14602985E86F004CA990 /* FirebaseAnalytics */; };
+		3ECC14632985E86F004CA990 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3ECC14622985E86F004CA990 /* FirebaseAuth */; };
+		3ECC14652985E86F004CA990 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 3ECC14642985E86F004CA990 /* FirebaseAuthCombine-Community */; };
+		3ECC14672985E86F004CA990 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 3ECC14662985E86F004CA990 /* FirebaseDatabase */; };
+		3ECC14692985E86F004CA990 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 3ECC14682985E86F004CA990 /* FirebaseFirestore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +37,7 @@
 		3E50ED2D2985BC5A00FACC47 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		3E50ED2F2985BC7D00FACC47 /* CircleGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleGraph.swift; sourceTree = "<group>"; };
 		3E50ED312985C53A00FACC47 /* LayeredBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayeredBackground.swift; sourceTree = "<group>"; };
+		3ECC145D2985E7C9004CA990 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +45,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3ECC14612985E86F004CA990 /* FirebaseAnalytics in Frameworks */,
+				3ECC14652985E86F004CA990 /* FirebaseAuthCombine-Community in Frameworks */,
+				3ECC14672985E86F004CA990 /* FirebaseDatabase in Frameworks */,
+				3ECC14692985E86F004CA990 /* FirebaseFirestore in Frameworks */,
+				3ECC14632985E86F004CA990 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +105,7 @@
 		3E50ED252985BC1000FACC47 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				3ECC145D2985E7C9004CA990 /* GoogleService-Info.plist */,
 				3E50ED262985BC2600FACC47 /* LoginView.swift */,
 				3E50ED282985BC3300FACC47 /* SignupView.swift */,
 			);
@@ -125,6 +138,13 @@
 			dependencies = (
 			);
 			name = HackTAMU;
+			packageProductDependencies = (
+				3ECC14602985E86F004CA990 /* FirebaseAnalytics */,
+				3ECC14622985E86F004CA990 /* FirebaseAuth */,
+				3ECC14642985E86F004CA990 /* FirebaseAuthCombine-Community */,
+				3ECC14662985E86F004CA990 /* FirebaseDatabase */,
+				3ECC14682985E86F004CA990 /* FirebaseFirestore */,
+			);
 			productName = HackTAMU;
 			productReference = 3E50ED132985BB9200FACC47 /* HackTAMU.app */;
 			productType = "com.apple.product-type.application";
@@ -153,6 +173,9 @@
 				Base,
 			);
 			mainGroup = 3E50ED0A2985BB9200FACC47;
+			packageReferences = (
+				3ECC145F2985E86F004CA990 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 3E50ED142985BB9200FACC47 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -168,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E50ED1E2985BB9300FACC47 /* Preview Assets.xcassets in Resources */,
+				3ECC145E2985E7C9004CA990 /* GoogleService-Info.plist in Resources */,
 				3E50ED1B2985BB9300FACC47 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,6 +409,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3ECC145F2985E86F004CA990 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3ECC14602985E86F004CA990 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3ECC145F2985E86F004CA990 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		3ECC14622985E86F004CA990 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3ECC145F2985E86F004CA990 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		3ECC14642985E86F004CA990 /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3ECC145F2985E86F004CA990 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
+		3ECC14662985E86F004CA990 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3ECC145F2985E86F004CA990 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		3ECC14682985E86F004CA990 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3ECC145F2985E86F004CA990 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3E50ED0B2985BB9200FACC47 /* Project object */;
 }
