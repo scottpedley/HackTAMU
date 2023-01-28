@@ -6,10 +6,39 @@
 //
 
 import SwiftUI
-
+struct testView: View{
+    var body: some View{
+        NavigationView{
+            ZStack{
+                Color.red
+            }
+            .navigationTitle("Home")
+        }
+        
+    }
+}
 struct NavigationBar: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView{
+            testView()
+                .tabItem{
+                    Image(systemName: "house")
+                    Text("Home")
+                }
+            Text("Home")
+                .tabItem{
+                    Image(systemName: "highlighter")
+                    Text("Home")
+                }
+            Text("Home")
+                .tabItem{
+                    Image(systemName: "lasso")
+                    Text("Home")
+                }
+            
+    
+            
+        }
     }
 }
 
