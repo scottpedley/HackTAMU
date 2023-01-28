@@ -15,7 +15,7 @@ struct LayeredBackground: View {
         
         let leftGradientColor: Color = Color.teal
         let rightGradientColor: Color = Color.blue
-        let revealedGradientHeight: CGFloat = 200
+        let revealedGradientHeight: CGFloat = 300
         
         ZStack{
             // Background Color
