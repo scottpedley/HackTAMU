@@ -11,12 +11,23 @@ struct HomeView: View {
     
     // MARK: BODY
     var body: some View {
-        
-        ZStack{
-            LayeredBackground(contentBackground: Color.white)
-            
+        TabView{
+            PortfolioView()
+                .tabItem{
+                    Image(systemName: "house")
+                    Text("Home")
+                }
+            Text("Risk Management View")
+                .tabItem{
+                    Image(systemName: "highlighter")
+                    Text("Dashboard")
+                }
+            Text("TBH View")
+                .tabItem{
+                    Image(systemName: "lasso")
+                    Text("Other")
+                }
         }
-        
     }
 }
 
