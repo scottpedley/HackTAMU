@@ -8,17 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		3E50ED172985BB9200FACC47 /* HackTAMUApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E50ED162985BB9200FACC47 /* HackTAMUApp.swift */; };
-		3E50ED192985BB9200FACC47 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E50ED182985BB9200FACC47 /* ContentView.swift */; };
+		3E50ED192985BB9200FACC47 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E50ED182985BB9200FACC47 /* HomeView.swift */; };
 		3E50ED1B2985BB9300FACC47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E50ED1A2985BB9300FACC47 /* Assets.xcassets */; };
 		3E50ED1E2985BB9300FACC47 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E50ED1D2985BB9300FACC47 /* Preview Assets.xcassets */; };
+		3E50ED272985BC2600FACC47 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E50ED262985BC2600FACC47 /* LoginView.swift */; };
+		3E50ED292985BC3300FACC47 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E50ED282985BC3300FACC47 /* SignupView.swift */; };
+		3E50ED2B2985BC4600FACC47 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E50ED2A2985BC4600FACC47 /* OnboardingView.swift */; };
+		3E50ED2E2985BC5A00FACC47 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E50ED2D2985BC5A00FACC47 /* NavigationBar.swift */; };
+		3E50ED302985BC7D00FACC47 /* CircleGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E50ED2F2985BC7D00FACC47 /* CircleGraph.swift */; };
+		3E50ED322985C53A00FACC47 /* LayeredBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E50ED312985C53A00FACC47 /* LayeredBackground.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3E50ED132985BB9200FACC47 /* HackTAMU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackTAMU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E50ED162985BB9200FACC47 /* HackTAMUApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackTAMUApp.swift; sourceTree = "<group>"; };
-		3E50ED182985BB9200FACC47 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3E50ED182985BB9200FACC47 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		3E50ED1A2985BB9300FACC47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E50ED1D2985BB9300FACC47 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3E50ED262985BC2600FACC47 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		3E50ED282985BC3300FACC47 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		3E50ED2A2985BC4600FACC47 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		3E50ED2D2985BC5A00FACC47 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		3E50ED2F2985BC7D00FACC47 /* CircleGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleGraph.swift; sourceTree = "<group>"; };
+		3E50ED312985C53A00FACC47 /* LayeredBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayeredBackground.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +63,9 @@
 		3E50ED152985BB9200FACC47 /* HackTAMU */ = {
 			isa = PBXGroup;
 			children = (
+				3E50ED2C2985BC4D00FACC47 /* Components */,
+				3E50ED242985BB9B00FACC47 /* Screens */,
 				3E50ED162985BB9200FACC47 /* HackTAMUApp.swift */,
-				3E50ED182985BB9200FACC47 /* ContentView.swift */,
 				3E50ED1A2985BB9300FACC47 /* Assets.xcassets */,
 				3E50ED1C2985BB9300FACC47 /* Preview Content */,
 			);
@@ -65,6 +78,35 @@
 				3E50ED1D2985BB9300FACC47 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3E50ED242985BB9B00FACC47 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				3E50ED252985BC1000FACC47 /* Authentication */,
+				3E50ED182985BB9200FACC47 /* HomeView.swift */,
+				3E50ED2A2985BC4600FACC47 /* OnboardingView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		3E50ED252985BC1000FACC47 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				3E50ED262985BC2600FACC47 /* LoginView.swift */,
+				3E50ED282985BC3300FACC47 /* SignupView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		3E50ED2C2985BC4D00FACC47 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3E50ED2D2985BC5A00FACC47 /* NavigationBar.swift */,
+				3E50ED2F2985BC7D00FACC47 /* CircleGraph.swift */,
+				3E50ED312985C53A00FACC47 /* LayeredBackground.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +179,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E50ED192985BB9200FACC47 /* ContentView.swift in Sources */,
+				3E50ED322985C53A00FACC47 /* LayeredBackground.swift in Sources */,
+				3E50ED292985BC3300FACC47 /* SignupView.swift in Sources */,
+				3E50ED272985BC2600FACC47 /* LoginView.swift in Sources */,
+				3E50ED302985BC7D00FACC47 /* CircleGraph.swift in Sources */,
+				3E50ED192985BB9200FACC47 /* HomeView.swift in Sources */,
+				3E50ED2B2985BC4600FACC47 /* OnboardingView.swift in Sources */,
 				3E50ED172985BB9200FACC47 /* HackTAMUApp.swift in Sources */,
+				3E50ED2E2985BC5A00FACC47 /* NavigationBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
