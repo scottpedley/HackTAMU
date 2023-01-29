@@ -7,8 +7,9 @@
 
 import SwiftUI
 
-struct CatagoryButton: View {
+struct CategoryButton: View {
     var catagoryTitle:String
+    var color: Color
     
     var body: some View {
         NavigationLink(
@@ -16,10 +17,18 @@ struct CatagoryButton: View {
         ) {
             ZStack{
                 RoundedRectangle(cornerRadius: 10)
-                    .frame(width: UIScreen.main.bounds.width, height:60)
+                    .frame(width: UIScreen.main.bounds.width-5, height:60)
                     .foregroundColor(Color(.lightGray).opacity(0.1))
+                    .overlay(
+                      RoundedRectangle(cornerRadius: 10).fill(color).mask(    // << here !!
+                        HStack {
+                            Rectangle().frame(width: 10)
+                            Spacer()
+                        }
+                    ).allowsHitTesting(false))
                 HStack {
                     Text(catagoryTitle)
+                        .padding(.leading, 10)
                         .bold()
                         .padding()
                         .font(.title)
@@ -37,10 +46,10 @@ struct CatagoryButton: View {
     }
 }
 
-struct CatagoryButton_Previews: PreviewProvider {
+struct CategoryButton_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            CatagoryButton(catagoryTitle: "Bonds")
+            CategoryButton(catagoryTitle: "Bonds", color: Color.blue)
         }
     }
 }

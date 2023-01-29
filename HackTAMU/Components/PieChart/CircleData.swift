@@ -10,7 +10,6 @@ struct DataStructure: Identifiable {
     let id = UUID()
     let category: String
     let value: Double
-    
 }
 
 

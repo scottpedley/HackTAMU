@@ -11,35 +11,43 @@ struct PortfolioView: View {
     @State var name: String = "Amy"
     
     var body: some View {
-        ScrollView{
-            ZStack {
+        ZStack {
+            
+            VStack {
+                // Greeting Title
+                HStack {
+                    Text("Hello " + name + "!")
+                        .bold()
+                        .font(.largeTitle)
+                    Spacer()
+                }
+                .padding(.leading, 20)
+                .padding(.top, 30)
+                
+                Spacer()
+                    
                 NavigationView {
-                    VStack{
-                        // Greeting Title
-                        HStack {
-                            Text("Hello " + name + "!")
-                                .bold()
-                                .font(.largeTitle)
-                            Spacer()
-                        }
-                        .padding(.leading, 20)
-                        .padding(.top, 30)
+                    VStack(spacing: 20){
+                        CircleGraph()
                         
                         Spacer()
                         
-                        VStack() {
-                            CatagoryButton(catagoryTitle: "Bonds")
-                            CatagoryButton(catagoryTitle: "Stocks")
-                            CatagoryButton(catagoryTitle: "Index")
-                            CatagoryButton(catagoryTitle: "Crypto")
-                        }
-                        .frame(height: 300)
-                    }
-                }
+                        ScrollView{
+                        
+                            VStack() {
+                                CategoryButton(catagoryTitle: "Bonds", color: .blue)
+                                CategoryButton(catagoryTitle: "Stocks", color: .red)
+                                CategoryButton(catagoryTitle: "Index", color: .yellow)
+                                CategoryButton(catagoryTitle: "Crypto", color: .green)
+                            }
+                            .frame(height: 300)
+                        } //: SCROLL VIEW
+                    } //: VSTACK
+                } //: NAV VIEW
+            }
                 
                 
-            } //: ZSTACK
-        } //: SCROLL VIEW
+        } //: ZSTACK
     }
 }
 

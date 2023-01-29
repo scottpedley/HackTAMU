@@ -26,7 +26,7 @@ struct SignupView: View {
         let buttonStrokeColor: Color = Color.teal
         
         ZStack(){
-            LayeredBackground(contentBackground: Color.white)
+            LayeredBackground(contentBackground: Color.white, contentHeight: 300)
             
             VStack {
                 // MARK: BACK

@@ -10,12 +10,12 @@ import SwiftUI
 struct LayeredBackground: View {
     
     var contentBackground: Color
+    var contentHeight: CGFloat
     
     var body: some View {
         
         let leftGradientColor: Color = Color.teal
         let rightGradientColor: Color = Color.blue
-        let revealedGradientHeight: CGFloat = 300
         
         ZStack{
             // Background Color
@@ -31,7 +31,7 @@ struct LayeredBackground: View {
                     .frame(
                         width:
                             UIScreen.main.bounds.width,
-                        height: UIScreen.main.bounds.height-revealedGradientHeight)
+                        height: UIScreen.main.bounds.height-contentHeight)
                 
             }
             .ignoresSafeArea(.all)
@@ -43,6 +43,6 @@ struct LayeredBackground: View {
 
 struct LayeredBackground_Previews: PreviewProvider {
     static var previews: some View {
-        LayeredBackground(contentBackground: Color.white)
+        LayeredBackground(contentBackground: Color.white, contentHeight: 300)
     }
 }

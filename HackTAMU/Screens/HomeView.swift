@@ -11,9 +11,8 @@ struct HomeView: View {
     
     // MARK: BODY
     var body: some View {
-        
         TabView{
-            Text("Risk Management View")
+            RiskAnalysisView()
                 .tabItem{
                     Image(systemName: "exclamationmark.triangle")
                     Text("Home")

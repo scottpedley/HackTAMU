@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		3E10ECE22986198B001EB02C /* InvestmentCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E10ECE12986198B001EB02C /* InvestmentCategory.swift */; };
 		3E10ECE4298622B9001EB02C /* CatagoryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E10ECE3298622B9001EB02C /* CatagoryButton.swift */; };
-		3E10ECE829864012001EB02C /* data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E10ECE729864012001EB02C /* data.swift */; };
+		3E10ECE829864012001EB02C /* CircleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E10ECE729864012001EB02C /* CircleData.swift */; };
+		3E10ECEB2986539C001EB02C /* RiskAnalysisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E10ECEA2986539C001EB02C /* RiskAnalysisView.swift */; };
 		3E50ED172985BB9200FACC47 /* HackTAMUApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E50ED162985BB9200FACC47 /* HackTAMUApp.swift */; };
 		3E50ED192985BB9200FACC47 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E50ED182985BB9200FACC47 /* HomeView.swift */; };
 		3E50ED1B2985BB9300FACC47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E50ED1A2985BB9300FACC47 /* Assets.xcassets */; };
@@ -32,7 +33,8 @@
 /* Begin PBXFileReference section */
 		3E10ECE12986198B001EB02C /* InvestmentCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentCategory.swift; sourceTree = "<group>"; };
 		3E10ECE3298622B9001EB02C /* CatagoryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatagoryButton.swift; sourceTree = "<group>"; };
-		3E10ECE729864012001EB02C /* data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = data.swift; sourceTree = "<group>"; };
+		3E10ECE729864012001EB02C /* CircleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleData.swift; sourceTree = "<group>"; };
+		3E10ECEA2986539C001EB02C /* RiskAnalysisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiskAnalysisView.swift; sourceTree = "<group>"; };
 		3E50ED132985BB9200FACC47 /* HackTAMU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackTAMU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E50ED162985BB9200FACC47 /* HackTAMUApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackTAMUApp.swift; sourceTree = "<group>"; };
 		3E50ED182985BB9200FACC47 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -64,6 +66,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E10ECE92986423F001EB02C /* PieChart */ = {
+			isa = PBXGroup;
+			children = (
+				3E50ED2F2985BC7D00FACC47 /* CircleGraph.swift */,
+				3E10ECE729864012001EB02C /* CircleData.swift */,
+			);
+			path = PieChart;
+			sourceTree = "<group>";
+		};
 		3E50ED0A2985BB9200FACC47 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +118,7 @@
 				3E50ED252985BC1000FACC47 /* Authentication */,
 				3E50ED182985BB9200FACC47 /* HomeView.swift */,
 				3E50ED402985ECE700FACC47 /* PortfolioView.swift */,
+				3E10ECEA2986539C001EB02C /* RiskAnalysisView.swift */,
 				3E50ED2A2985BC4600FACC47 /* OnboardingView.swift */,
 			);
 			path = Screens;
@@ -125,11 +137,10 @@
 		3E50ED2C2985BC4D00FACC47 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				3E50ED2F2985BC7D00FACC47 /* CircleGraph.swift */,
+				3E10ECE92986423F001EB02C /* PieChart */,
 				3E50ED312985C53A00FACC47 /* LayeredBackground.swift */,
 				3E10ECE12986198B001EB02C /* InvestmentCategory.swift */,
 				3E10ECE3298622B9001EB02C /* CatagoryButton.swift */,
-				3E10ECE729864012001EB02C /* data.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -219,9 +230,10 @@
 				3E50ED322985C53A00FACC47 /* LayeredBackground.swift in Sources */,
 				3E50ED292985BC3300FACC47 /* SignupView.swift in Sources */,
 				3E50ED272985BC2600FACC47 /* LoginView.swift in Sources */,
-				3E10ECE829864012001EB02C /* data.swift in Sources */,
+				3E10ECE829864012001EB02C /* CircleData.swift in Sources */,
 				3E10ECE4298622B9001EB02C /* CatagoryButton.swift in Sources */,
 				3E50ED302985BC7D00FACC47 /* CircleGraph.swift in Sources */,
+				3E10ECEB2986539C001EB02C /* RiskAnalysisView.swift in Sources */,
 				3E50ED192985BB9200FACC47 /* HomeView.swift in Sources */,
 				3E10ECE22986198B001EB02C /* InvestmentCategory.swift in Sources */,
 				3E50ED2B2985BC4600FACC47 /* OnboardingView.swift in Sources */,
