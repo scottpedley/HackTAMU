@@ -13,20 +13,7 @@ struct CircleGraph: View {
     @State private var category: String = ""
     @State private var value: Double = 0.0
     
-    @State var data = [
-          DataStructure(category: "bond", value: 100),
-          DataStructure(category: "stock", value: 50),
-          DataStructure(category: "stock", value: 50),
-          DataStructure(category: "stock", value: 50),
-          DataStructure(category: "stock", value: 50),
-          DataStructure(category: "stock", value: 50),
-          DataStructure(category: "bond", value: 100),
-          DataStructure(category: "index", value: 50),
-          DataStructure(category: "crypto", value: 0),
-          DataStructure(category: "crypto", value: 200),
-          DataStructure(category: "stock", value: 500),
-          
-      ]
+   //var Bata = data
     
       var total: Double {
           return findTotalValue(data)

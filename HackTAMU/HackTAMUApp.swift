@@ -22,7 +22,7 @@ struct HackTAMUApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     var body: some Scene {
         WindowGroup {
-            CategoryButton(catagoryTitle: "Bonds", color: Color.blue)
+            HomeView()
         }
     }
 }

@@ -12,41 +12,49 @@ struct PortfolioView: View {
     
     var body: some View {
         ZStack {
-            
-            VStack {
-                // Greeting Title
-                HStack {
-                    Text("Hello " + name + "!")
-                        .bold()
-                        .font(.largeTitle)
-                    Spacer()
-                }
-                .padding(.leading, 20)
-                .padding(.top, 30)
-                
-                Spacer()
+            NavigationView {
+                VStack {
+                    // Greeting Title
+                    HStack {
+                        Text("Hello " + name + "!")
+                            .bold()
+                            .font(.largeTitle)
+                        Spacer()
+                    }
+                    .padding(.leading, 20)
+                    .padding(.top, 30)
                     
-                NavigationView {
+                    Spacer()
+                        
                     VStack(spacing: 20){
                         CircleGraph()
                         
                         Spacer()
                         
                         ScrollView{
-                        
                             VStack() {
-                                CategoryButton(catagoryTitle: "Bonds", color: .blue)
-                                CategoryButton(catagoryTitle: "Stocks", color: .red)
-                                CategoryButton(catagoryTitle: "Index", color: .yellow)
-                                CategoryButton(catagoryTitle: "Crypto", color: .green)
+                                CategoryButton(
+                                    catagoryTitle: "Bonds",
+                                    color: .blue,
+                                    value: findTotalValueForCategory(category: "bond")/findTotalValue(data: data) * 100)
+                                CategoryButton(
+                                    catagoryTitle: "Stocks",
+                                    color: .red,
+                                    value: findTotalValueForCategory(category: "stock")/findTotalValue(data: data) * 100)
+                                CategoryButton(
+                                    catagoryTitle: "Index",
+                                    color: .yellow,
+                                    value: findTotalValueForCategory(category: "index")/findTotalValue(data: data) * 100)
+                                CategoryButton(
+                                    catagoryTitle: "Crypto",
+                                    color: .green,
+                                    value: findTotalValueForCategory(category: "crypto")/findTotalValue(data: data) * 100)
                             }
                             .frame(height: 300)
                         } //: SCROLL VIEW
                     } //: VSTACK
-                } //: NAV VIEW
-            }
-                
-                
+                }
+            } //: NAV VIEW
         } //: ZSTACK
     }
 }

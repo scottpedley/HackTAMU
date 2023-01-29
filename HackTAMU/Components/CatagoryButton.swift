@@ -10,46 +10,44 @@ import SwiftUI
 struct CategoryButton: View {
     var catagoryTitle:String
     var color: Color
+    var value: CGFloat
     
     var body: some View {
-        NavigationLink(
-            destination: InvestmentCategory(category: catagoryTitle)
-        ) {
-            ZStack{
-                RoundedRectangle(cornerRadius: 10)
-                    .frame(width: UIScreen.main.bounds.width-5, height:60)
-                    .foregroundColor(Color(.lightGray).opacity(0.1))
-                    .overlay(
-                      RoundedRectangle(cornerRadius: 10).fill(color).mask(    // << here !!
-                        HStack {
-                            Rectangle().frame(width: 10)
-                            Spacer()
-                        }
-                    ).allowsHitTesting(false))
-                HStack {
-                    Text(catagoryTitle)
-                        .padding(.leading, 10)
-                        .bold()
-                        .padding()
-                        .font(.title)
-                    Spacer()
-                    Text("\(Image(systemName: "chevron.right"))")
-                        .foregroundColor(.black)
-                        .padding(.leading, 20)
-                        .font(.system(size: 25))
-                        .padding()
-                }
-            } //: ZSTACK
-        }
-        .foregroundColor(Color.black)
-        .navigationBarBackButtonHidden(true)
+        
+        HStack {
+            RoundedRectangle(cornerRadius: 5)
+                .frame(width: 20, height: 20)
+                .padding(.leading, 20)
+                .foregroundColor(color)
+            
+            NavigationLink(
+                destination: InvestmentCategory(category: catagoryTitle)
+            ) {
+                ZStack{
+                    HStack {
+                        Text(catagoryTitle)
+                            .bold()
+                            .padding(.leading, 10)
+                            .font(.title)
+                        Spacer()
+                        Text(" \(String(format: "%.2f", value))%")
+                        Text("\(Image(systemName: "chevron.right"))")
+                            .foregroundColor(.black)
+                            .font(.system(size: 25))
+                            .padding()
+                    }
+                } //: ZSTACK
+            }
+            .foregroundColor(Color.black)
+            .navigationBarBackButtonHidden(true)
+        } //: HSTACK
     }
 }
 
 struct CategoryButton_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            CategoryButton(catagoryTitle: "Bonds", color: Color.blue)
+            CategoryButton(catagoryTitle: "Bonds", color: Color.blue, value: 45)
         }
     }
 }

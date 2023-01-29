@@ -32,7 +32,6 @@ struct InvestmentCategory: View {
                 
                 
             } //: HEADER HSTACK
-            .padding(.top, 30)
             .padding(20)
             
             Spacer()
