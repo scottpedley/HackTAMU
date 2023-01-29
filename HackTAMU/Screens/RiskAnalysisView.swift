@@ -9,7 +9,12 @@ import SwiftUI
 
 struct RiskAnalysisView: View {
     var body: some View {
-        Text("Risk Management Page")
+        VStack{
+            CatagoryRisk(catagoryTitle: "Bond", riskLevel: Color.green)
+            CatagoryRisk(catagoryTitle: "Stock", riskLevel: Color.yellow)
+            CatagoryRisk(catagoryTitle: "Index", riskLevel: Color.green)
+            CatagoryRisk(catagoryTitle: "Crypto", riskLevel: Color.red)
+        }
     }
 }
 

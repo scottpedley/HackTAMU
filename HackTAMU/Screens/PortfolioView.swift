@@ -12,8 +12,11 @@ struct PortfolioView: View {
     @State var showGreeting: Bool = true
     
     var body: some View {
-        ZStack {
-            NavigationView {
+        NavigationView {
+            ZStack{
+                // Background Color
+                Color.white
+            
                 VStack {
                     // Greeting Title
                     if showGreeting {
@@ -32,7 +35,6 @@ struct PortfolioView: View {
                         VStack(spacing: 20){
                             CircleGraph()
                             
-                            Spacer()
                             VStack() {
                                 CategoryButton(
                                     catagoryTitle: "Bonds",
@@ -55,8 +57,8 @@ struct PortfolioView: View {
                         } //: VSTACK
                     } //: SCROLL VIEW
                 }
-            } //: NAV VIEW
-        } //: ZSTACK
+            }
+        } //: NAV VIEW
         .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .local)
             .onEnded({ value in
                 // Swipe down action

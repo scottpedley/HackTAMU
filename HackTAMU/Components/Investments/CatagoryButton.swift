@@ -28,7 +28,7 @@ struct CategoryButton: View {
                         Text(catagoryTitle)
                             .bold()
                             .padding(.leading, 10)
-                            .font(.title)
+                            .font(.title2)
                         Spacer()
                         Text(" \(String(format: "%.2f", value))%")
                         Text("\(Image(systemName: "chevron.right"))")

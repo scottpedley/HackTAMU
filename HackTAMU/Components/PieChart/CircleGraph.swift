@@ -87,7 +87,6 @@ struct CircleGraph: View {
                 } //: CIRCLE GRAPH ZSTACK
               } //: VSTACK
           }
-          //.padding()
        
       }
       

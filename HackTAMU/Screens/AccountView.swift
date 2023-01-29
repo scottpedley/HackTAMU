@@ -26,6 +26,7 @@ struct AccountView: View {
                     .padding(.trailing, 30)
                     .foregroundColor(Color(.black).opacity(0.8))
             }
+            .padding(.top, 10)
             
             Text("@itsAmyHong")
             Divider()

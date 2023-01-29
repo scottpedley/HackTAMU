@@ -56,16 +56,28 @@ struct LoginView: View {
                     TextField("Email", text: $email)
                         .padding()
                         .frame(width:300, height: 50, alignment: .center)
-                        .background(Color(.lightGray).opacity(0.1))
                         .cornerRadius(10)
                         .border(.red, width: CGFloat(invalidEmail))
                         .padding(.bottom, 15)
+                        .overlay(
+                            RoundedRectangle(
+                                cornerRadius: 10).fill(Color.gray.opacity(0.5)).mask(
+                            VStack {
+                                Rectangle().frame(height: 3)
+                            }.padding(.top, 20)
+                        ).allowsHitTesting(false))
                     TextField("Password", text: $password)
                         .padding()
                         .frame(width:300, height: 50, alignment: .center)
-                        .background(Color(.lightGray).opacity(0.1))
                         .cornerRadius(10)
                         .border(.red, width: CGFloat(invalidPassword))
+                        .overlay(
+                            RoundedRectangle(
+                                cornerRadius: 10).fill(Color.gray.opacity(0.5)).mask(
+                            VStack {
+                                Rectangle().frame(height: 3)
+                            }.padding(.top, 30)
+                        ).allowsHitTesting(false))
                     
                     
                     // MARK: BUTTONS
