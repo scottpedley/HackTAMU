@@ -9,29 +9,30 @@ import SwiftUI
 
 struct PortfolioView: View {
     @State var name: String = "Amy"
+    @State var showGreeting: Bool = true
     
     var body: some View {
         ZStack {
             NavigationView {
                 VStack {
                     // Greeting Title
-                    HStack {
-                        Text("Hello " + name + "!")
-                            .bold()
-                            .font(.largeTitle)
-                        Spacer()
+                    if showGreeting {
+                        HStack {
+                            Text("Hello " + name + "!")
+                                .bold()
+                                .font(.largeTitle)
+                            Spacer()
+                        }
+                        .padding(.leading, 20)
+                        .padding(.top, 30)
                     }
-                    .padding(.leading, 20)
-                    .padding(.top, 30)
                     
                     Spacer()
-                        
-                    VStack(spacing: 20){
-                        CircleGraph()
-                        
-                        Spacer()
-                        
-                        ScrollView{
+                    ScrollView{
+                        VStack(spacing: 20){
+                            CircleGraph()
+                            
+                            Spacer()
                             VStack() {
                                 CategoryButton(
                                     catagoryTitle: "Bonds",
@@ -51,11 +52,23 @@ struct PortfolioView: View {
                                     value: findTotalValueForCategory(category: "crypto")/findTotalValue(data: data) * 100)
                             }
                             .frame(height: 300)
-                        } //: SCROLL VIEW
-                    } //: VSTACK
+                        } //: VSTACK
+                    } //: SCROLL VIEW
                 }
             } //: NAV VIEW
         } //: ZSTACK
+        .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .local)
+            .onEnded({ value in
+                // Swipe down action
+                if value.translation.height <= 0 {
+                    showGreeting = false
+                }
+                // Swipe up action
+                if value.translation.height > 0 {
+                    showGreeting = true
+                }
+            })
+        ) //: GESTURE
     }
 }
 

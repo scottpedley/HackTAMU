@@ -33,13 +33,12 @@ struct CategoryButton: View {
                         Text(" \(String(format: "%.2f", value))%")
                         Text("\(Image(systemName: "chevron.right"))")
                             .foregroundColor(.black)
-                            .font(.system(size: 25))
-                            .padding()
+                            .padding(.trailing, 20)
+
                     }
                 } //: ZSTACK
             }
             .foregroundColor(Color.black)
-            .navigationBarBackButtonHidden(true)
         } //: HSTACK
     }
 }

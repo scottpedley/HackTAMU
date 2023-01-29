@@ -11,6 +11,8 @@
 		3E10ECE4298622B9001EB02C /* CatagoryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E10ECE3298622B9001EB02C /* CatagoryButton.swift */; };
 		3E10ECE829864012001EB02C /* CircleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E10ECE729864012001EB02C /* CircleData.swift */; };
 		3E10ECEB2986539C001EB02C /* RiskAnalysisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E10ECEA2986539C001EB02C /* RiskAnalysisView.swift */; };
+		3E10ECEE29866672001EB02C /* OnboardingSurvey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E10ECED29866672001EB02C /* OnboardingSurvey.swift */; };
+		3E10ECF129866961001EB02C /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E10ECF029866961001EB02C /* AccountView.swift */; };
 		3E50ED172985BB9200FACC47 /* HackTAMUApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E50ED162985BB9200FACC47 /* HackTAMUApp.swift */; };
 		3E50ED192985BB9200FACC47 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E50ED182985BB9200FACC47 /* HomeView.swift */; };
 		3E50ED1B2985BB9300FACC47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E50ED1A2985BB9300FACC47 /* Assets.xcassets */; };
@@ -35,6 +37,8 @@
 		3E10ECE3298622B9001EB02C /* CatagoryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatagoryButton.swift; sourceTree = "<group>"; };
 		3E10ECE729864012001EB02C /* CircleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleData.swift; sourceTree = "<group>"; };
 		3E10ECEA2986539C001EB02C /* RiskAnalysisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiskAnalysisView.swift; sourceTree = "<group>"; };
+		3E10ECED29866672001EB02C /* OnboardingSurvey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSurvey.swift; sourceTree = "<group>"; };
+		3E10ECF029866961001EB02C /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		3E50ED132985BB9200FACC47 /* HackTAMU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackTAMU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E50ED162985BB9200FACC47 /* HackTAMUApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackTAMUApp.swift; sourceTree = "<group>"; };
 		3E50ED182985BB9200FACC47 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -75,6 +79,31 @@
 			path = PieChart;
 			sourceTree = "<group>";
 		};
+		3E10ECEC29866656001EB02C /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				3E50ED2A2985BC4600FACC47 /* OnboardingView.swift */,
+				3E10ECED29866672001EB02C /* OnboardingSurvey.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		3E10ECEF29866917001EB02C /* Investments */ = {
+			isa = PBXGroup;
+			children = (
+				3E10ECE12986198B001EB02C /* InvestmentCategory.swift */,
+				3E10ECE3298622B9001EB02C /* CatagoryButton.swift */,
+			);
+			path = Investments;
+			sourceTree = "<group>";
+		};
+		3E10ECF22986756B001EB02C /* RiskManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RiskManager;
+			sourceTree = "<group>";
+		};
 		3E50ED0A2985BB9200FACC47 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +126,7 @@
 				3E50ED3E2985EC7200FACC47 /* ML */,
 				3E50ED2C2985BC4D00FACC47 /* Components */,
 				3E50ED242985BB9B00FACC47 /* Screens */,
+				3E50ED182985BB9200FACC47 /* HomeView.swift */,
 				3E50ED162985BB9200FACC47 /* HackTAMUApp.swift */,
 				3E50ED1A2985BB9300FACC47 /* Assets.xcassets */,
 				3E50ED1C2985BB9300FACC47 /* Preview Content */,
@@ -115,11 +145,11 @@
 		3E50ED242985BB9B00FACC47 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				3E10ECEC29866656001EB02C /* Onboarding */,
 				3E50ED252985BC1000FACC47 /* Authentication */,
-				3E50ED182985BB9200FACC47 /* HomeView.swift */,
 				3E50ED402985ECE700FACC47 /* PortfolioView.swift */,
 				3E10ECEA2986539C001EB02C /* RiskAnalysisView.swift */,
-				3E50ED2A2985BC4600FACC47 /* OnboardingView.swift */,
+				3E10ECF029866961001EB02C /* AccountView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -137,10 +167,10 @@
 		3E50ED2C2985BC4D00FACC47 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				3E10ECF22986756B001EB02C /* RiskManager */,
+				3E10ECEF29866917001EB02C /* Investments */,
 				3E10ECE92986423F001EB02C /* PieChart */,
 				3E50ED312985C53A00FACC47 /* LayeredBackground.swift */,
-				3E10ECE12986198B001EB02C /* InvestmentCategory.swift */,
-				3E10ECE3298622B9001EB02C /* CatagoryButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -231,9 +261,11 @@
 				3E50ED292985BC3300FACC47 /* SignupView.swift in Sources */,
 				3E50ED272985BC2600FACC47 /* LoginView.swift in Sources */,
 				3E10ECE829864012001EB02C /* CircleData.swift in Sources */,
+				3E10ECF129866961001EB02C /* AccountView.swift in Sources */,
 				3E10ECE4298622B9001EB02C /* CatagoryButton.swift in Sources */,
 				3E50ED302985BC7D00FACC47 /* CircleGraph.swift in Sources */,
 				3E10ECEB2986539C001EB02C /* RiskAnalysisView.swift in Sources */,
+				3E10ECEE29866672001EB02C /* OnboardingSurvey.swift in Sources */,
 				3E50ED192985BB9200FACC47 /* HomeView.swift in Sources */,
 				3E10ECE22986198B001EB02C /* InvestmentCategory.swift in Sources */,
 				3E50ED2B2985BC4600FACC47 /* OnboardingView.swift in Sources */,
