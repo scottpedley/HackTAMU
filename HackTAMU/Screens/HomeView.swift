@@ -11,16 +11,17 @@ struct HomeView: View {
     
     // MARK: BODY
     var body: some View {
+        
         TabView{
+            Text("Risk Management View")
+                .tabItem{
+                    Image(systemName: "exclamationmark.triangle")
+                    Text("Home")
+                }
             PortfolioView()
                 .tabItem{
                     Image(systemName: "house")
-                    Text("Home")
-                }
-            Text("Risk Management View")
-                .tabItem{
-                    Image(systemName: "highlighter")
-                    Text("Dashboard")
+                    Text("Portfolio")
                 }
             Text("TBH View")
                 .tabItem{

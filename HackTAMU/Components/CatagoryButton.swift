@@ -16,7 +16,7 @@ struct CatagoryButton: View {
         ) {
             ZStack{
                 RoundedRectangle(cornerRadius: 10)
-                    .frame(width: UIScreen.main.bounds.width, height:80)
+                    .frame(width: UIScreen.main.bounds.width, height:60)
                     .foregroundColor(Color(.lightGray).opacity(0.1))
                 HStack {
                     Text(catagoryTitle)
@@ -33,6 +33,7 @@ struct CatagoryButton: View {
             } //: ZSTACK
         }
         .foregroundColor(Color.black)
+        .navigationBarBackButtonHidden(true)
     }
 }
 

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3E10ECE22986198B001EB02C /* InvestmentCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E10ECE12986198B001EB02C /* InvestmentCategory.swift */; };
 		3E10ECE4298622B9001EB02C /* CatagoryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E10ECE3298622B9001EB02C /* CatagoryButton.swift */; };
+		3E10ECE829864012001EB02C /* data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E10ECE729864012001EB02C /* data.swift */; };
 		3E50ED172985BB9200FACC47 /* HackTAMUApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E50ED162985BB9200FACC47 /* HackTAMUApp.swift */; };
 		3E50ED192985BB9200FACC47 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E50ED182985BB9200FACC47 /* HomeView.swift */; };
 		3E50ED1B2985BB9300FACC47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E50ED1A2985BB9300FACC47 /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		3E10ECE12986198B001EB02C /* InvestmentCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentCategory.swift; sourceTree = "<group>"; };
 		3E10ECE3298622B9001EB02C /* CatagoryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatagoryButton.swift; sourceTree = "<group>"; };
+		3E10ECE729864012001EB02C /* data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = data.swift; sourceTree = "<group>"; };
 		3E50ED132985BB9200FACC47 /* HackTAMU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackTAMU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E50ED162985BB9200FACC47 /* HackTAMUApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackTAMUApp.swift; sourceTree = "<group>"; };
 		3E50ED182985BB9200FACC47 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				3E50ED312985C53A00FACC47 /* LayeredBackground.swift */,
 				3E10ECE12986198B001EB02C /* InvestmentCategory.swift */,
 				3E10ECE3298622B9001EB02C /* CatagoryButton.swift */,
+				3E10ECE729864012001EB02C /* data.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 				3E50ED322985C53A00FACC47 /* LayeredBackground.swift in Sources */,
 				3E50ED292985BC3300FACC47 /* SignupView.swift in Sources */,
 				3E50ED272985BC2600FACC47 /* LoginView.swift in Sources */,
+				3E10ECE829864012001EB02C /* data.swift in Sources */,
 				3E10ECE4298622B9001EB02C /* CatagoryButton.swift in Sources */,
 				3E50ED302985BC7D00FACC47 /* CircleGraph.swift in Sources */,
 				3E50ED192985BB9200FACC47 /* HomeView.swift in Sources */,

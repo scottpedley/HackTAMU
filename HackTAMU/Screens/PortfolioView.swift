@@ -11,32 +11,35 @@ struct PortfolioView: View {
     @State var name: String = "Amy"
     
     var body: some View {
-        ZStack {
-            NavigationView {
-                VStack{
-                    // Greeting Title
-                    HStack {
-                        Text("Hello " + name + "!")
-                            .bold()
-                            .font(.largeTitle)
+        ScrollView{
+            ZStack {
+                NavigationView {
+                    VStack{
+                        // Greeting Title
+                        HStack {
+                            Text("Hello " + name + "!")
+                                .bold()
+                                .font(.largeTitle)
+                            Spacer()
+                        }
+                        .padding(.leading, 20)
+                        .padding(.top, 30)
+                        
                         Spacer()
+                        
+                        VStack() {
+                            CatagoryButton(catagoryTitle: "Bonds")
+                            CatagoryButton(catagoryTitle: "Stocks")
+                            CatagoryButton(catagoryTitle: "Index")
+                            CatagoryButton(catagoryTitle: "Crypto")
+                        }
+                        .frame(height: 300)
                     }
-                    .padding(.leading, 20)
-                    .padding(.top, 30)
-                    
-                    Spacer()
-                    
-                    VStack() {
-                        CatagoryButton(catagoryTitle: "Bonds")
-                        CatagoryButton(catagoryTitle: "Stocks")
-                        CatagoryButton(catagoryTitle: "Index")
-                        CatagoryButton(catagoryTitle: "Crypto")
-                    }
-                    .frame(height: 300)
                 }
-            }
-                    
-        } //: ZSTACK
+                
+                
+            } //: ZSTACK
+        } //: SCROLL VIEW
     }
 }
 
