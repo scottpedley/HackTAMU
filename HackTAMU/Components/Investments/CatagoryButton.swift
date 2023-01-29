@@ -34,19 +34,21 @@ struct CategoryButton: View {
                         Text("\(Image(systemName: "chevron.right"))")
                             .foregroundColor(.black)
                             .padding(.trailing, 20)
-
+                        
                     }
                 } //: ZSTACK
-            }
-            .foregroundColor(Color.black)
-        } //: HSTACK
+                // }
+                
+                .foregroundColor(Color.black)
+            } //: HSTACK
+        }
     }
-}
-
-struct CategoryButton_Previews: PreviewProvider {
-    static var previews: some View {
-        NavigationView {
-            CategoryButton(catagoryTitle: "Bonds", color: Color.blue, value: 45)
+    
+    struct CategoryButton_Previews: PreviewProvider {
+        static var previews: some View {
+            NavigationView {
+                CategoryButton(catagoryTitle: "Bonds", color: Color.blue, value: 45)
+            }
         }
     }
 }

@@ -15,6 +15,14 @@
 		3E10ECF129866961001EB02C /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E10ECF029866961001EB02C /* AccountView.swift */; };
 		3E10ECF429867893001EB02C /* CatagoryRisk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E10ECF329867893001EB02C /* CatagoryRisk.swift */; };
 		3E10ECF629868ADE001EB02C /* RiskExplaination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E10ECF529868ADE001EB02C /* RiskExplaination.swift */; };
+		3E3EB7C6298694140064940F /* StockAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3EB7C5298694140064940F /* StockAdd.swift */; };
+		3E3EB7C8298694220064940F /* BondAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3EB7C7298694220064940F /* BondAdd.swift */; };
+		3E3EB7CA2986942A0064940F /* IndexAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3EB7C92986942A0064940F /* IndexAdd.swift */; };
+		3E3EB7CC298694370064940F /* CryptoAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3EB7CB298694370064940F /* CryptoAdd.swift */; };
+		3E3EB7CE298698F80064940F /* InvestmentStock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3EB7CD298698F80064940F /* InvestmentStock.swift */; };
+		3E3EB7D02986994F0064940F /* InvestmentIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3EB7CF2986994F0064940F /* InvestmentIndex.swift */; };
+		3E3EB7D229869A8D0064940F /* InvestmentBond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3EB7D129869A8D0064940F /* InvestmentBond.swift */; };
+		3E3EB7D429869AAA0064940F /* InvestmentCrypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3EB7D329869AAA0064940F /* InvestmentCrypto.swift */; };
 		3E50ED172985BB9200FACC47 /* HackTAMUApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E50ED162985BB9200FACC47 /* HackTAMUApp.swift */; };
 		3E50ED192985BB9200FACC47 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E50ED182985BB9200FACC47 /* HomeView.swift */; };
 		3E50ED1B2985BB9300FACC47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E50ED1A2985BB9300FACC47 /* Assets.xcassets */; };
@@ -43,6 +51,14 @@
 		3E10ECF029866961001EB02C /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		3E10ECF329867893001EB02C /* CatagoryRisk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatagoryRisk.swift; sourceTree = "<group>"; };
 		3E10ECF529868ADE001EB02C /* RiskExplaination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiskExplaination.swift; sourceTree = "<group>"; };
+		3E3EB7C5298694140064940F /* StockAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockAdd.swift; sourceTree = "<group>"; };
+		3E3EB7C7298694220064940F /* BondAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BondAdd.swift; sourceTree = "<group>"; };
+		3E3EB7C92986942A0064940F /* IndexAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexAdd.swift; sourceTree = "<group>"; };
+		3E3EB7CB298694370064940F /* CryptoAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoAdd.swift; sourceTree = "<group>"; };
+		3E3EB7CD298698F80064940F /* InvestmentStock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentStock.swift; sourceTree = "<group>"; };
+		3E3EB7CF2986994F0064940F /* InvestmentIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentIndex.swift; sourceTree = "<group>"; };
+		3E3EB7D129869A8D0064940F /* InvestmentBond.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentBond.swift; sourceTree = "<group>"; };
+		3E3EB7D329869AAA0064940F /* InvestmentCrypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentCrypto.swift; sourceTree = "<group>"; };
 		3E50ED132985BB9200FACC47 /* HackTAMU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackTAMU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E50ED162985BB9200FACC47 /* HackTAMUApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackTAMUApp.swift; sourceTree = "<group>"; };
 		3E50ED182985BB9200FACC47 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -97,6 +113,10 @@
 			children = (
 				3E10ECE12986198B001EB02C /* InvestmentCategory.swift */,
 				3E10ECE3298622B9001EB02C /* CatagoryButton.swift */,
+				3E3EB7CD298698F80064940F /* InvestmentStock.swift */,
+				3E3EB7CF2986994F0064940F /* InvestmentIndex.swift */,
+				3E3EB7D129869A8D0064940F /* InvestmentBond.swift */,
+				3E3EB7D329869AAA0064940F /* InvestmentCrypto.swift */,
 			);
 			path = Investments;
 			sourceTree = "<group>";
@@ -108,6 +128,16 @@
 				3E10ECF529868ADE001EB02C /* RiskExplaination.swift */,
 			);
 			path = RiskManager;
+			sourceTree = "<group>";
+		};
+		3E3EB7C4298693FD0064940F /* Addition */ = {
+			isa = PBXGroup;
+			children = (
+				3E3EB7C7298694220064940F /* BondAdd.swift */,
+				3E3EB7C92986942A0064940F /* IndexAdd.swift */,
+				3E3EB7CB298694370064940F /* CryptoAdd.swift */,
+			);
+			path = Addition;
 			sourceTree = "<group>";
 		};
 		3E50ED0A2985BB9200FACC47 = {
@@ -151,11 +181,13 @@
 		3E50ED242985BB9B00FACC47 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				3E3EB7C4298693FD0064940F /* Addition */,
 				3E10ECEC29866656001EB02C /* Onboarding */,
 				3E50ED252985BC1000FACC47 /* Authentication */,
 				3E50ED402985ECE700FACC47 /* PortfolioView.swift */,
 				3E10ECEA2986539C001EB02C /* RiskAnalysisView.swift */,
 				3E10ECF029866961001EB02C /* AccountView.swift */,
+				3E3EB7C5298694140064940F /* StockAdd.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -270,15 +302,23 @@
 				3E10ECE829864012001EB02C /* CircleData.swift in Sources */,
 				3E10ECF129866961001EB02C /* AccountView.swift in Sources */,
 				3E10ECF629868ADE001EB02C /* RiskExplaination.swift in Sources */,
+				3E3EB7D429869AAA0064940F /* InvestmentCrypto.swift in Sources */,
 				3E10ECE4298622B9001EB02C /* CatagoryButton.swift in Sources */,
 				3E50ED302985BC7D00FACC47 /* CircleGraph.swift in Sources */,
 				3E10ECEB2986539C001EB02C /* RiskAnalysisView.swift in Sources */,
 				3E10ECEE29866672001EB02C /* OnboardingSurvey.swift in Sources */,
+				3E3EB7C6298694140064940F /* StockAdd.swift in Sources */,
+				3E3EB7CE298698F80064940F /* InvestmentStock.swift in Sources */,
+				3E3EB7D229869A8D0064940F /* InvestmentBond.swift in Sources */,
+				3E3EB7D02986994F0064940F /* InvestmentIndex.swift in Sources */,
 				3E50ED192985BB9200FACC47 /* HomeView.swift in Sources */,
 				3E10ECE22986198B001EB02C /* InvestmentCategory.swift in Sources */,
 				3E50ED2B2985BC4600FACC47 /* OnboardingView.swift in Sources */,
 				3E50ED172985BB9200FACC47 /* HackTAMUApp.swift in Sources */,
+				3E3EB7CC298694370064940F /* CryptoAdd.swift in Sources */,
+				3E3EB7C8298694220064940F /* BondAdd.swift in Sources */,
 				3E50ED412985ECE700FACC47 /* PortfolioView.swift in Sources */,
+				3E3EB7CA2986942A0064940F /* IndexAdd.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,42 +1,31 @@
 //
-//  InvestmentCatagory.swift
+//  InvestmentIndex.swift
 //  HackTAMU
 //
-//  Created by Amy Hong on 1/28/23.
+//  Created by Scott Pedley on 1/29/23.
 //
 
 import SwiftUI
 
-struct InvestmentCategory: View {
-    var category: String
-    
-    @State private var showingPopover = false
-    
+struct InvestmentIndex: View {
     var body: some View {
         
         VStack{
             HStack{
-                Text(category)
+                Text("Index")
                     .bold()
                     .font(.largeTitle)
                 
                 Spacer()
-                /*
                 Button(action:{
-                    showingPopover = true
+                    
                 }) {
                     Image(systemName: "plus.square.fill")
                         .resizable()
                         .foregroundColor(Color.green)
                         .frame(width: 40, height: 40)
                 } //: ADD BUTTON
-               */
-                NavigationLink(destination: BondAdd()){
-                    Image(systemName: "plus.square.fill")
-                        .resizable()
-                        .foregroundColor(Color.green)
-                        .frame(width: 40, height: 40)
-                }
+               
                 
             } //: HEADER HSTACK
             .padding(20)
@@ -53,8 +42,8 @@ struct InvestmentCategory: View {
     }
 }
 
-struct InvestmentCatagory_Previews: PreviewProvider {
+struct InvestmentIndex_Previews: PreviewProvider {
     static var previews: some View {
-        InvestmentCategory(category: "Bonds")
+        InvestmentIndex()
     }
 }

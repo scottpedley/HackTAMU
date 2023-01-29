@@ -29,6 +29,7 @@ struct HomeView: View {
                         Text("Account")
                     }
             } //: TAB VIEW
+            .navigationBarBackButtonHidden(true)
         } //: VSTACK
     }
 }

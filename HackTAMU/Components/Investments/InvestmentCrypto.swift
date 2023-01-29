@@ -1,42 +1,31 @@
 //
-//  InvestmentCatagory.swift
+//  InvestmentCrypto.swift
 //  HackTAMU
 //
-//  Created by Amy Hong on 1/28/23.
+//  Created by Scott Pedley on 1/29/23.
 //
 
 import SwiftUI
 
-struct InvestmentCategory: View {
-    var category: String
-    
-    @State private var showingPopover = false
-    
+struct InvestmentCrypto: View {
     var body: some View {
         
         VStack{
             HStack{
-                Text(category)
+                Text("Crypto")
                     .bold()
                     .font(.largeTitle)
                 
                 Spacer()
-                /*
                 Button(action:{
-                    showingPopover = true
+                    
                 }) {
                     Image(systemName: "plus.square.fill")
                         .resizable()
                         .foregroundColor(Color.green)
                         .frame(width: 40, height: 40)
                 } //: ADD BUTTON
-               */
-                NavigationLink(destination: BondAdd()){
-                    Image(systemName: "plus.square.fill")
-                        .resizable()
-                        .foregroundColor(Color.green)
-                        .frame(width: 40, height: 40)
-                }
+               
                 
             } //: HEADER HSTACK
             .padding(20)
@@ -50,11 +39,10 @@ struct InvestmentCategory: View {
             } // CONTENT VSTACK
             
         } // OUTER VSTACK
-    }
-}
+    }}
 
-struct InvestmentCatagory_Previews: PreviewProvider {
+struct InvestmentCrypto_Previews: PreviewProvider {
     static var previews: some View {
-        InvestmentCategory(category: "Bonds")
+        InvestmentCrypto()
     }
 }
