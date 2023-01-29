@@ -59,18 +59,6 @@ struct PortfolioView: View {
                 }
             }
         } //: NAV VIEW
-        .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .local)
-            .onEnded({ value in
-                // Swipe down action
-                if value.translation.height <= 0 {
-                    showGreeting = false
-                }
-                // Swipe up action
-                if value.translation.height > 0 {
-                    showGreeting = true
-                }
-            })
-        ) //: GESTURE
     }
 }
 

@@ -11,12 +11,13 @@ struct CatagoryRisk: View {
     
     var catagoryTitle:String
     var riskLevel: Color
+    var value: CGFloat
     
     
     var body: some View {
         
         NavigationLink(
-            destination: InvestmentCategory(category: catagoryTitle)
+            destination: RiskExplaination(category: catagoryTitle)
         ) {
             ZStack {
                 VStack{
@@ -28,12 +29,10 @@ struct CatagoryRisk: View {
                 }
                 HStack {
                     Text(catagoryTitle)
-                        .padding(.leading, 10)
-                        .bold()
-                        .padding()
-                        .font(.title)
+                        .padding(.leading, 20)
+                        .font(.system(size: 25))
                     Spacer()
-                    
+                    Text(" \(String(format: "%.2f", value))%")
                     Text("\(Image(systemName: "circle.fill"))")
                         .foregroundColor(riskLevel)
                         .padding(.leading, 20)
@@ -49,6 +48,6 @@ struct CatagoryRisk: View {
 
 struct CatagoryRisk_Previews: PreviewProvider {
     static var previews: some View {
-        CatagoryRisk(catagoryTitle: "Bonds", riskLevel: Color.red)
+        CatagoryRisk(catagoryTitle: "Bonds", riskLevel: Color.red, value: 45)
     }
 }
